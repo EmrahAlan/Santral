@@ -33,6 +33,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.yeniKayıtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numaraSorgulaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kulanıcıKayıtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -65,20 +71,55 @@
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniKayıtToolStripMenuItem});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(126, 26);
+            // 
+            // yeniKayıtToolStripMenuItem
+            // 
+            this.yeniKayıtToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.numaraSorgulaToolStripMenuItem});
+            this.yeniKayıtToolStripMenuItem.Name = "yeniKayıtToolStripMenuItem";
+            this.yeniKayıtToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.yeniKayıtToolStripMenuItem.Text = "Yeni Kayıt";
+            // 
+            // numaraSorgulaToolStripMenuItem
+            // 
+            this.numaraSorgulaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.kulanıcıKayıtToolStripMenuItem});
+            this.numaraSorgulaToolStripMenuItem.Name = "numaraSorgulaToolStripMenuItem";
+            this.numaraSorgulaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.numaraSorgulaToolStripMenuItem.Text = "Numara Sorgula";
+            // 
+            // kulanıcıKayıtToolStripMenuItem
+            // 
+            this.kulanıcıKayıtToolStripMenuItem.Name = "kulanıcıKayıtToolStripMenuItem";
+            this.kulanıcıKayıtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kulanıcıKayıtToolStripMenuItem.Text = "Kulanıcı Kayıt";
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
             // 
             // FrmBilgi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 247);
+            this.ClientSize = new System.Drawing.Size(755, 407);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "FrmBilgi";
             this.Text = "FrmBilgi";
             this.Load += new System.EventHandler(this.FrmBilgi_Load);
+            this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -89,5 +130,10 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem yeniKayıtToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem numaraSorgulaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kulanıcıKayıtToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
     }
 }
